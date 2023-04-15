@@ -1,0 +1,14 @@
+# Pas encore fini
+
+import mysql.connector
+
+connexion = mysql.connector.connect(
+
+    host="localhost",
+    user="root",
+    password="Scarface13",
+    database ="boutique"
+)
+
+cursor = connexion.cursor()
+cursor.execute ("CREATE TABLE categorie (id PRIMARY KEY INT AUTO_INCREMENT, nom VARCHAR(255))")
